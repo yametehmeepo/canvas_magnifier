@@ -102,7 +102,15 @@
 				var dx = point.x - mR;
 				var dy = point.y - mR;
 
+				context.save();
+				context.beginPath();
+				context.strokeStyle = '#069';
+				context.lineWidth = 10;
+				context.arc(point.x, point.y, mR, 0, 2*Math.PI);
+				context.stroke();
+				context.clip();
 				context.drawImage(offCanvas, sx, sy, 2*mR, 2*mR, dx, dy, 2*mR, 2*mR);
+				context.restore();
 			}
 		}
 	</script>
