@@ -1,1 +1,2 @@
 # canvas_magnifier
+使用离屏Canvas制作放大镜效果
